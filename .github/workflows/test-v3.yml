@@ -4,7 +4,7 @@ jobs:
   testCreateOrUpdateComment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       # Test create
       - name: Create comment
@@ -51,7 +51,7 @@ jobs:
       # Test create from template
       - name: Render template
         id: template
-        uses: chuhlomin/render-template@v1.10
+        uses: chuhlomin/render-template@807354a04d9300c9c2ac177c0aa41556c92b3f75 # v1.10
         with:
           template: .github/comment-template.md
           vars: |
